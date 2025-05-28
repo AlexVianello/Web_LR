@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме – Сідлярчук Олександр</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Сідлярчук Олександр</h1>
+            <h2>Посада: Web-Pentest</h2>
+            <div class="theme-switcher">
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Нічний режим</span>
+            </div>
+        </header>
+
+        <section>
+            <h3 class="animated-heading">Контактна інформація</h3>
+            <ul>
+                <li><strong>Email:</strong> <span class="copy-on-click" data-copy="alexsidliarchuk@hmail.com">alexsidliarchuk@hmail.com</span></li>
+                <li><strong>Телефон:</strong> <span class="copy-on-click" data-copy="+380512352346">+380512352346</span></li>
+                <li><strong>Місто:</strong> Львів, Україна</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="animated-heading">Про мене</h3>
+            <p>
+                Я спеціаліст із тестування на проникнення та OSINT-аналітик. Маю досвід аналізу загроз, експлуатації уразливостей та розробки рекомендацій щодо їх усунення. Працюю з автоматизованими засобами тестування безпеки та створюю власні скрипти для аналізу мережевих вразливостей.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="animated-heading">Досвід роботи</h3>
+            <ul>
+                <li>
+                    <strong>Фріланс – OSINT</strong> (2023 – теперішній час)
+                    <p>Комерційний ресерч</p>
+                </li>
+                <li>
+                    <strong>Кібербезпека – Навчальні проекти</strong> (2024 – теперішній час)
+                    <p>Ознайомлення з пентестингом, аналіз уразливостей веб-додатків.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="animated-heading">Освіта</h3>
+            <p>Національний Університет "Львівська Політехніка" (2022 – 2026)</p>
+        </section>
+
+        <section>
+            <h3 class="animated-heading">Навички</h3>
+            <ul>
+                <li>Python, Tkinter, Git</li>
+                <li>Pentest and OSINT tools</li>
+                <li>SQL, робота з базами даних</li>
+                <li>Технічне обслуговування пристроїв</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="animated-heading">Мови</h3>
+            <ul>
+                <li>Українська – рідна</li>
+                <li>Англійська – середній рівень (Intermediate)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="animated-heading">Коментарі роботодавців</h3>
+            <div id="comments-container">
+                <p>Завантаження коментарів...</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Сідлярчук Олександр. Усі права захищені.</p>
+        <div id="browser-info"></div>
+        <div id="visit-counter"></div>
+    </footer>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Зворотній зв'язок</h3>
+            <form action="https://formspree.io/f/ba660e8a12be4e0f81f64efcd9a5e4ba" method="POST" id="feedbackForm">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Номер телефону:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Ваше повідомлення:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Відправити</button>
+            </form>
+            <p id="formStatus"></p>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Нагору">&#9650;</button>
+
+    <div id="copyMessage" class="copy-message">Скопійовано!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
